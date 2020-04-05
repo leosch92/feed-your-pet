@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: #cae9f3;
+}
+
+.btn {
+    background: #6e3824;
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+#fed-message {
+    height: 52px;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: Impact, Charcoal, sans-serif;
+    line-height: 52px;
+}

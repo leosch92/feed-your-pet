@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed your Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <svg height="450" width="450">
+            <defs>
+                <linearGradient id="gradient" x1="0%" x2="0%" y1="100%" y2="0%">
+                    <stop offset="0%" stop-color="#d29a5d" />
+                    <stop offset="0%" id="gradient-division" stop-color="#d29a5d" />
+                    <stop offset="0%" stop-color="white" />
+                    <stop offset="100%" stop-color="white" />
+                </linearGradie>
+            </defs>
+    
+            <path 
+                fill="url(#gradient)" 
+                stroke="#6e3824" 
+                stroke-width="5"
+                d="M 225 100
+                   a 50 50 0 1 0 -50 50 
+                   v 150
+                   a 50 50 0 1 0 50 50
+                   a 50 50 0 1 0 50 -50
+                   v -150
+                   a 50 50 0 1 0 -50 -50"
+            />
+        </svg>
+        <button id="feed" class="btn">Feed your Pet!</button>
+    
+        <span hidden id="fed-message">Your pet has been fed!</span>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
